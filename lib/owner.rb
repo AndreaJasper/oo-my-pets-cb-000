@@ -42,27 +42,24 @@ end
  end
 
  def walk_dogs
-   self.pets[:dogs].each do|dog|
-   dog.mood = "happy"
-   end
+   self.dogs.each {|dog| dog.mood = 'happy'}
  end
 
  def play_with_cats
-   self.pets[:cats].each do|cat|
-   cat.mood = "happy"
-   end
+   self.cats.each {|cat| cat.mood = "happy"}
  end
 
  def sell_pets
-   self.pets.each do| types,pets|
-     pets.each do|pet|
-       pet.mood = "nervous"
-     end
-   end
-   @pets = {:dogs => [], :cats => []}
+   cats.each do |cat|
+     cat.mood = 'nervous'
+     cat.owner = nil
+  end
+  dogs.each do |dog|
+    dog.mood = 'nervous'
+    dog.owner = nil
  end
 
  def list_pets
-   return "I have #{self.pets[:dogs].count} dog(s), and #{self.pets[:cats].count} cat(s)."
+   "I have #{self.pets[:dogs].count} dog(s), and #{self.pets[:cats].count} cat(s)."
  end
 end
