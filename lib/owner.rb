@@ -26,7 +26,7 @@ end
    end
  end
  def say_species
-   if self.name == "human"
+   if self.species == "human"
      return "I am a human."
    end
  end
