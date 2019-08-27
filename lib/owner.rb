@@ -28,9 +28,7 @@ end
    end
  end
  def say_species
-   if self.name == "human"
-     return "I am a human."
-   end
+     "I am a human."
  end
  def buy_cat(name)
    cat = Cat.new(name)
