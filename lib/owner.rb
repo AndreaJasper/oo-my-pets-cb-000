@@ -10,7 +10,7 @@ end
    @@all
  end
  def self.reset_all
-   @@all = []
+   @@all == []
  end
  def self.count
    @@all.length
