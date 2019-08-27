@@ -19,14 +19,14 @@ end
    @@all.length
  end
  def species
-   if self.species == "human"
+   if self.name == "human"
      return "human"
    else
      return "NoMethodError"
    end
  end
  def say_species
-   if self.species == "human"
+   if self.name == "human"
      return "I am a human."
    end
  end
