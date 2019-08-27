@@ -15,13 +15,6 @@ end
  def self.count
    @@all.length
  end
- def name
-   if self.name == name
-     return name
-   else
-     return "NoMethodError"
-   end
- end
  def species
    if self.name == "human"
      return "human"
