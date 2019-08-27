@@ -19,7 +19,7 @@ end
    @@all.length
  end
  def species
-   if self.name == "human"
+   if self.species == "human"
      return "human"
    else
      return "NoMethodError"
