@@ -6,10 +6,6 @@ class Owner
    @pets = {:dogs => [], :cats => []}
    @@all << self
 end
-def name
-
-end
-
 end
  def self.all
    @@all
