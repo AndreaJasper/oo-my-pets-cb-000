@@ -4,7 +4,7 @@ class Dog
 
   def owner=(owner)
     @owner = owner
-    owner.add_dof{self}
+    owner.add_dog{self}
   end
 
   def initialize(name, owner, mood = "nervous")
