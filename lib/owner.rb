@@ -3,8 +3,9 @@ class Owner
   attr_reader :species
   @@all = []
 
- def initialize(name, species = "human")
+ def initialize(name)
    @name = name
+   @species = 'species'
    @pets = {:dogs => [], :cats => []}
    @@all << self
 end
@@ -19,13 +20,6 @@ end
  end
  def self.count
    @@all.length
- end
- def species
-   if self.name == "human"
-     return "human"
-   else
-     return "NoMethodError"
-   end
  end
  def say_species
      "I am a human."
