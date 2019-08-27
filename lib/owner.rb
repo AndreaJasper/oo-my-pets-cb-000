@@ -7,7 +7,7 @@ class Owner
    @@all << self
 end
 def name
-  @name
+  @name.dup.freeze
 end
  def self.all
    @@all
