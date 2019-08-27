@@ -20,12 +20,8 @@ end
    @@all = clear
  end
 
- def self.count
-   @@all.length
- end
-
  def say_species
-     "I am a human."
+     "I am #{self.species}"
  end
 
  def buy_cat(name)
