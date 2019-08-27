@@ -8,13 +8,13 @@ class Owner
    @@all << self
 end
 
-def name
-  @name.dup.freeze
-end
-
  def self.all
    @@all
  end
+
+ def self.count
+   @@all.size
+end
 
  def self.reset_all
    @@all = []
